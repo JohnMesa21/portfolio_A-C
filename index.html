@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Grupo A&C Solutions</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
     <div id="loader" class="loader-bg">
@@ -33,10 +34,6 @@
             <img src="images/web-dev.jpg" alt="Desarrollo Web">
             <span>Desarrollo Web</span>
         </div>
-        <div class="img-servicio" data-animate>
-            <img src="images/consultoria.jpg" alt="Consultoría Tecnológica">
-            <span>Consultoría Tecnológica</span>
-        </div>
     </section>
     <nav>
         <ul>
@@ -50,7 +47,7 @@
     <main>
         <section id="nosotros" class="reveal">
             <h2>Sobre Nosotros</h2>
-            <p>Grupo A&amp;C Solutions es un emprendimiento familiar fundado por Anderson y Camila, apasionados por la tecnología y el desarrollo de software. Nos especializamos en crear aplicaciones y páginas web que impulsan el crecimiento y la eficiencia de las empresas.</p>
+            <p>Grupo A&amp;C Solutions es un emprendimiento familiar fundado por Anderson Mesa y Camila Uribe, apasionados por la tecnología y el desarrollo de software. Nos especializamos en crear aplicaciones y páginas web que impulsan el crecimiento y la eficiencia de las empresas.</p>
             <div class="mision-vision">
                 <div class="reveal">
                     <h3>Misión</h3>
@@ -74,32 +71,75 @@
                 <h3>Nuestro Equipo</h3>
                 <div class="equipo-cards">
                     <div class="miembro" data-animate>
-                        <img src="images/anderson.jpg" alt="Anderson" class="foto-equipo">
+                        <img src="images/hero.png" alt="Anderson" class="foto-equipo">
                         <div>
-                            <strong>Anderson</strong>
+                            <strong>Hector</strong>
                             <p>Desarrollador Full Stack, apasionado por la tecnología y la creación de soluciones eficientes.</p>
-                            <a href="https://www.linkedin.com/in/anderson" target="_blank" class="btn-linkedin">LinkedIn</a>
+                            <div class="redes-equipo">
+                                
+                                <a href="https://www.linkedin.com/in/john-anderson-mesa-gallego-17a090218/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                
+                                <a href="https://www.instagram.com/anderson_mesa/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                            </div>
                         </div>
                     </div>
                     <div class="miembro" data-animate>
-                        <img src="images/camila.jpg" alt="Camila" class="foto-equipo">
+                        <img src="images/Perfil_maria.jpg" alt="Camila" class="foto-equipo">
                         <div>
-                            <strong>Camila</strong>
-                            <p>Gestora de proyectos y atención al cliente, enfocada en entender las necesidades de cada empresa y garantizar la mejor experiencia.</p>
-                            <a href="https://www.linkedin.com/in/camila" target="_blank" class="btn-linkedin">LinkedIn</a>
+                            <strong>Camila Uribe</strong>
+                            <p>Gestora de proyectos, enfocada en entender las necesidades de cada empresa y garantizar la mejor experiencia.</p>
+                            <div class="redes-equipo">
+                                <a href="https://www.linkedin.com/in/camila-uribed/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="https://www.instagram.com/cami_uribed/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="servicios">
+        <section id="servicios" class="reveal">
             <h2>Servicios</h2>
-            <ul>
-                <li><strong>Desarrollo de aplicaciones web:</strong> Creamos plataformas y sistemas a medida para automatizar y digitalizar procesos empresariales.</li>
-                <li><strong>Desarrollo de páginas web:</strong> Diseñamos sitios web modernos, responsivos y optimizados para destacar tu negocio en internet.</li>
-                <li><strong>Consultoría tecnológica:</strong> Te asesoramos en la elección de tecnologías y estrategias digitales para tu empresa.</li>
-                <li><strong>Soporte y mantenimiento:</strong> Acompañamos a nuestros clientes en el crecimiento y evolución de sus soluciones digitales.</li>
-            </ul>
+            <div class="servicios-grid">
+                <div class="servicio-card" data-animate>
+                    <div class="servicio-icon">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <h3>Desarrollo de Aplicaciones Web</h3>
+                    <p>Creamos plataformas y sistemas a medida para automatizar y digitalizar procesos empresariales.</p>
+                    <ul class="servicio-lista">
+                        <li><i class="fa-solid fa-check"></i> Aplicaciones empresariales personalizadas</li>
+                        <li><i class="fa-solid fa-check"></i> Sistemas de gestión y control</li>
+                        <li><i class="fa-solid fa-check"></i> Automatización de procesos</li>
+                        <li><i class="fa-solid fa-check"></i> Integración con sistemas existentes</li>
+                    </ul>
+                </div>
+                <div class="servicio-card" data-animate>
+                    <div class="servicio-icon">
+                        <i class="fa-solid fa-globe"></i>
+                    </div>
+                    <h3>Desarrollo de Páginas Web</h3>
+                    <p>Diseñamos sitios web modernos, responsivos y optimizados para destacar tu negocio en internet.</p>
+                    <ul class="servicio-lista">
+                        <li><i class="fa-solid fa-check"></i> Diseño web responsivo</li>
+                        <li><i class="fa-solid fa-check"></i> Optimización SEO</li>
+                        <li><i class="fa-solid fa-check"></i> Experiencia de usuario intuitiva</li>
+                        <li><i class="fa-solid fa-check"></i> Integración con redes sociales</li>
+                    </ul>
+                </div>
+                <div class="servicio-card" data-animate>
+                    <div class="servicio-icon">
+                        <i class="fa-solid fa-headset"></i>
+                    </div>
+                    <h3>Soporte y Mantenimiento</h3>
+                    <p>Acompañamos a nuestros clientes en el crecimiento y evolución de sus soluciones digitales.</p>
+                    <ul class="servicio-lista">
+                        <li><i class="fa-solid fa-check"></i> Mantenimiento preventivo</li>
+                        <li><i class="fa-solid fa-check"></i> Actualizaciones de seguridad</li>
+                        <li><i class="fa-solid fa-check"></i> Soporte técnico continuo</li>
+                        <li><i class="fa-solid fa-check"></i> Mejoras y optimizaciones</li>
+                    </ul>
+                </div>
+            </div>
         </section>
         <section id="portafolio">
             <h2>Portafolio</h2>
@@ -126,7 +166,7 @@
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 Grupo A&amp;C Solutions. Todos los derechos reservados.</p>
+        <p>&copy; 2025 Grupo A&amp;C Solutions. Todos los derechos reservados.</p>
     </footer>
     <script>
     // Animación al hacer scroll

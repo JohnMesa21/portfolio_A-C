@@ -480,4 +480,124 @@ footer {
     min-width: 180px;
     max-width: 100%;
   }
+}
+.redes-equipo {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.8rem;
+}
+.redes-equipo a {
+  color: #3ec6e0;
+  font-size: 1.2rem;
+  transition: color 0.3s, transform 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: 2px solid #3ec6e0;
+  border-radius: 50%;
+  background: transparent;
+}
+.redes-equipo a:hover {
+  color: #fff;
+  background: #3ec6e0;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(62,198,224,0.2);
+}
+.servicios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+    justify-items: center;
+}
+
+.servicio-card {
+    background: #252A2E;
+    border-radius: 16px;
+    padding: 2rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 2px solid transparent;
+    position: relative;
+    overflow: hidden;
+    max-width: 400px;
+    width: 100%;
+}
+
+.servicio-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, transparent, rgba(62,198,224,0.1), transparent);
+    transform: translateX(-100%);
+    transition: transform 0.6s;
+}
+
+.servicio-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(62,198,224,0.15);
+    border-color: #3ec6e0;
+}
+
+.servicio-card:hover::before {
+    transform: translateX(100%);
+}
+
+.servicio-icon {
+    width: 60px;
+    height: 60px;
+    background: rgba(62,198,224,0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    color: #3ec6e0;
+    font-size: 1.8rem;
+}
+
+.servicio-card h3 {
+    color: #3ec6e0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.servicio-card p {
+    color: #fff;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.servicio-lista {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.servicio-lista li {
+    color: #fff;
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.servicio-lista i {
+    color: #3ec6e0;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .servicios-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .servicio-card {
+        padding: 1.5rem;
+    }
 } 
