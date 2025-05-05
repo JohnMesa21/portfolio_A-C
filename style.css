@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap');
 * {
   box-sizing: border-box;
-  font-family: 'Work Sans', Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -59,13 +59,13 @@ header, .header-bg {
   font-size: 1.3rem;
   margin-top: 0.7rem;
   color: #3ec6e0;
-  font-family: 'Righteous', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
   letter-spacing: 1px;
   text-shadow: 0 2px 8px rgba(62,198,224,0.10);
 }
 .header-bg h1 {
-  font-family: 'Righteous', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 2.7rem;
   color: #fff;
   margin-bottom: 0.2rem;
@@ -112,7 +112,7 @@ section {
 section h2 {
   color: #3ec6e0;
   margin-bottom: 1.5rem;
-  font-family: 'Righteous', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 2.5rem;
   text-align: center;
 }
@@ -425,7 +425,7 @@ footer {
   max-width: 350px;
   text-align: center;
   font-size: 1.08rem;
-  font-family: 'Work Sans', Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
   transition: transform 0.2s, box-shadow 0.2s;
 }
 .mision-vision > div:hover {
@@ -442,7 +442,7 @@ footer {
 .valores h3 {
   color: #3ec6e0;
   margin-bottom: 0.7rem;
-  font-family: 'Righteous', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.3rem;
 }
 .valores ul {
@@ -466,7 +466,7 @@ footer {
 }
 .equipo h3 {
   color: #1CB698;
-  font-family: 'Righteous', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.3rem;
   margin-bottom: 1.2rem;
 }
