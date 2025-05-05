@@ -189,13 +189,17 @@ section h2 {
   box-shadow: 0 6px 24px rgba(62,198,224,0.18);
 }
 .foto-equipo {
-  width: 70px;
-  height: 70px;
-  border-radius: 0;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
   object-fit: cover;
   border: 3px solid #3ec6e0;
   background: #fff;
   transition: transform 0.3s, border-color 0.3s;
+  display: block;
+  aspect-ratio: 1/1;
+  padding: 0;
+  margin: 0;
 }
 .foto-equipo:hover {
   transform: scale(1.1);
