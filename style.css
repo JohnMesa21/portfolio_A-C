@@ -191,10 +191,15 @@ section h2 {
 .foto-equipo {
   width: 70px;
   height: 70px;
-  border-radius: 50%;
+  border-radius: 0;
   object-fit: cover;
   border: 3px solid #3ec6e0;
   background: #fff;
+  transition: transform 0.3s, border-color 0.3s;
+}
+.foto-equipo:hover {
+  transform: scale(1.1);
+  border-color: #fff;
 }
 .btn-linkedin {
   display: inline-block;
