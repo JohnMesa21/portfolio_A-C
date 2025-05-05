@@ -410,27 +410,65 @@ footer {
 .mision-vision {
   display: flex;
   flex-wrap: wrap;
-  gap: 2.5rem;
+  gap: 2rem;
   margin-bottom: 2.5rem;
   justify-content: center;
 }
 .mision-vision > div {
   flex: 1 1 260px;
-  background: #3ec6e0;
+  background: rgba(62,198,224,0.1);
   color: #fff;
   padding: 1.5rem 1.2rem;
-  border-radius: 16px;
-  box-shadow: 0 2px 12px rgba(62,198,224,0.10);
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(62,198,224,0.05);
   min-width: 220px;
   max-width: 350px;
   text-align: center;
   font-size: 1.08rem;
   font-family: 'Poppins', sans-serif;
-  transition: transform 0.2s, box-shadow 0.2s;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(62,198,224,0.2);
+  opacity: 0;
+  transform: translateY(20px);
+}
+.mision-vision > div.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
 }
 .mision-vision > div:hover {
-  transform: translateY(-6px) scale(1.03);
-  box-shadow: 0 6px 24px rgba(62,198,224,0.18);
+  transform: translateY(-8px);
+  box-shadow: 0 8px 24px rgba(62,198,224,0.15);
+  background: rgba(62,198,224,0.15);
+  border-color: rgba(62,198,224,0.4);
+}
+.mision-vision h3 {
+  color: #3ec6e0;
+  margin-bottom: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.4rem;
+  transition: color 0.3s;
+}
+.mision-vision > div:hover h3 {
+  color: #fff;
+}
+.mision-vision p {
+  line-height: 1.6;
+  color: rgba(255,255,255,0.9);
+  transition: color 0.3s;
+}
+.mision-vision > div:hover p {
+  color: #fff;
+}
+@media (max-width: 900px) {
+  .mision-vision {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+  }
+  .mision-vision > div {
+    min-width: 280px;
+    max-width: 100%;
+  }
 }
 .valores {
   margin-bottom: 2.5rem;
@@ -469,17 +507,6 @@ footer {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.3rem;
   margin-bottom: 1.2rem;
-}
-@media (max-width: 900px) {
-  .mision-vision {
-    flex-direction: column;
-    gap: 1.2rem;
-    align-items: center;
-  }
-  .mision-vision > div {
-    min-width: 180px;
-    max-width: 100%;
-  }
 }
 .redes-equipo {
   display: flex;
