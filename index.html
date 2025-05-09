@@ -145,24 +145,23 @@
             <h2>Portafolio</h2>
             <p>¡Estamos comenzando! Pronto compartiremos aquí nuestros primeros proyectos.</p>
         </section>
-        <section id="contacto">
-            <h2>Contacto</h2>
-            <p>¿Quieres impulsar tu empresa con tecnología? ¡Hablemos!</p>
-            <form method="POST" autocomplete="off" class="form-contacto" data-animate>
-                <div class="input-group">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" required>
-                </div>
-                <div class="input-group">
-                    <label for="email">Correo electrónico:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="input-group">
-                    <label for="mensaje">Mensaje:</label>
-                    <textarea id="mensaje" name="mensaje" required></textarea>
-                </div>
-                <button type="submit" class="btn-enviar">Enviar mensaje 🚀</button>
-            </form>
+        <section id="contacto" class="contacto">
+            <div class="contenido-seccion reveal">
+                <h2>CONTACTO</h2>
+                <div class="fila">
+                    <!-- Formulario -->
+                    <div class="col">
+                        <form action="https://formspree.io/f/xqaqkwjg" method="POST">
+                            <input type="text" name="nombre" placeholder="Tú Nombre" required>
+                            <input type="tel" name="telefono" placeholder="Número telefónico" required>
+                            <input type="email" name="email" placeholder="Dirección de correo" required>
+                            <input type="text" name="asunto" placeholder="Tema" required>
+                            <textarea name="mensaje" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+                            <button type="submit">
+                                Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                                <span class="overlay"></span>
+                            </button>
+                        </form>
         </section>
     </main>
     <footer>
