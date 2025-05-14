@@ -638,30 +638,115 @@ footer {
     }
 }
 
-/* Estilos para la sección de contacto */
-.contacto {
-    padding: 80px 0;
+/* Estilos para la sección de portafolio */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+    margin-top: 2rem;
+}
+
+.proyecto-card {
     background: #252A2E;
-    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 2px solid transparent;
+}
+
+.proyecto-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(62,198,224,0.2);
+    border-color: #3ec6e0;
+}
+
+.proyecto-img {
+    width: 100%;
+    height: 220px;
     overflow: hidden;
 }
 
-.contacto::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
+.proyecto-img img {
     width: 100%;
     height: 100%;
-    background: linear-gradient(45deg, transparent, rgba(62,198,224,0.05), transparent);
-    animation: gradientMove 8s infinite linear;
+    object-fit: cover;
+    transition: transform 0.5s;
 }
 
-@keyframes gradientMove {
-    0% { transform: translateX(-100%); }
-    100% { transform: translateX(100%); }
+.proyecto-card:hover .proyecto-img img {
+    transform: scale(1.1);
 }
 
+.proyecto-info {
+    padding: 1.5rem;
+}
+
+.proyecto-info h3 {
+    color: #3ec6e0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+}
+
+.proyecto-info p {
+    color: #fff;
+    margin-bottom: 1.2rem;
+    line-height: 1.6;
+}
+
+.proyecto-tecnologias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-bottom: 1.5rem;
+}
+
+.proyecto-tecnologias span {
+    background: rgba(62,198,224,0.1);
+    color: #3ec6e0;
+    padding: 0.3rem 0.8rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.proyecto-enlaces {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn-proyecto {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: transparent;
+    color: #3ec6e0;
+    border: 2px solid #3ec6e0;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.btn-proyecto:hover {
+    background: #3ec6e0;
+    color: #1e2326;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(62,198,224,0.3);
+}
+
+@media (max-width: 768px) {
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .proyecto-img {
+        height: 180px;
+    }
+}
 .contenido-seccion {
     max-width: 1100px;
     margin: auto;
